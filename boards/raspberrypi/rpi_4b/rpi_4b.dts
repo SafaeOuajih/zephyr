@@ -23,6 +23,7 @@
 		zephyr,console = &uart1;
 		zephyr,shell-uart = &uart1;
 		zephyr,sram = &sram0;
+		zephyr,entropy = &rng;
 	};
 
 	leds {
@@ -42,4 +43,8 @@
 &uart1 {
 	status = "okay";
 	current-speed = <115200>;
+};
+
+&rng {
+	status = "okay";
 };
