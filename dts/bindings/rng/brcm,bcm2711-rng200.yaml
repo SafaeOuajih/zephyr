@@ -1,0 +1,12 @@
+# Copyright (c) 2024 Safae Ouajih
+# SPDX-License-Identifier: Apache-2.0
+
+description: BRCM BCM2711 RNG (Random Number Generator)
+
+compatible: "brcm,bcm2711-rng200"
+
+include: base.yaml
+
+properties:
+  reg:
+    required: true
